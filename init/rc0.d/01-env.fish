@@ -4,6 +4,8 @@ else if test -e /d/
     set -x SYNC_HOME /d/Synchronised
 else if test -e /media/aabs/DATA/
     set -x SYNC_HOME /media/aabs/DATA/Synchronised
+else if test -e /cygdrive/d/
+    set -x SYNC_HOME /cygdrive/d/Synchronised
 else
     set_color red
     echo "[ERROR] unable to find the Sync directory"
